@@ -1,0 +1,180 @@
+body{
+  background-color: hsl(0,0%,40%);
+  color: white;
+  font-family:Arial, sans-serif;
+  margin: 0 auto;
+  top:5px;
+}
+li{
+  list-style:none;
+}
+a{
+  color:white;
+  text-decoration:none;
+}
+#header-img{
+  transform:scale(0.45);
+}
+#guitar1{
+  transform:scale(0.15);
+}
+#guitar2{
+  transform:scale(0.15)
+}
+#guitar3{
+  transform:scale(0.15)
+}
+header{
+  position:fixed;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  height: 50px;
+  top:0;
+  left:0;
+  margin: 0 auto;
+  padding: 0px 300px 0px 0px;
+  background-color: hsl(0,0%,35%);
+  z-index: 2;
+}
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+.logo {
+  width: 65vw;
+  margin-left: 0;
+}
+@media (max-width: 650px) {
+  .logo {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+  }
+}
+.logo > img {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 20px;
+}
+.container{
+  max-width:1000px;
+  width:100%;
+  margin:0 auto;
+}
+nav > ul {
+  width: 30vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+@media (max-width: 650px) {
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+  nav li {
+    padding-bottom: 5px;
+  }
+}
+#register{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  margin-top:30px;
+  margin-bottom:50px;
+}
+.grid{
+  display: flex;
+}
+#top-guitars{
+  margin-bottom: 50px;
+}
+#top-guitars .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  width: 20vw;
+}
+#top-guitars .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 150px;
+  width: 80vw;
+  padding: 0px;
+  line-height: 0px;
+}
+.product{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  width: calc(100%/3);
+  border: 1px solid white;
+  padding-bottom: 5px;
+}
+.product > .title{
+  text-align:center;
+  background-color: hsl(0,0%,0%);
+  padding: 0px 100px;
+}
+.product > p{
+  margin: 5px;
+}
+.product > ul{
+  margin: 10px;
+}
+.product > ul > li{
+  line-height: 0;
+  list-style-image: url('https://image.flaticon.com/icons/png/128/93/93023.png');
+  transform: scale(0.40);
+  font-size: 50px
+ 
+}
+#pricing{
+  display:flex;
+  grid-column-gap:50px;
+}
+.btn{
+  cursor:pointer;
+  margin: 10px;
+  border: 2px black solid;
+  border-radius:50%;
+  padding: 10px;
+  font-weight:bold;
+}
+.btn:hover{
+  background:green;
+  transition: background-color 0.5s;
+  transform: scale(1.1);
+  transition: transform 2s;
+}
+footer{
+  background-color: hsl(0,0%,50%);
+  padding: 0.5px 15px 20px 15px;
+  margin: 15px 0px 10px 0px;  
+}
+footer > section > ul{
+  display:flex;
+  justify-content:flex-end;
+  grid-column-gap: 25px;
+}
+footer > section > span{
+  display:flex;
+  justify-content:flex-end;
+  line-height:1px;
+}
